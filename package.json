@@ -1,0 +1,27 @@
+{
+  "name": "adaptive",
+  "version": "1.0.0",
+  "description": "adaptive internet store repository",
+  "main": "1",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VSadovnikov/Adaptive.git"
+  },
+  "keywords": [
+    "adaptive",
+    "internet",
+    "store"
+  ],
+  "author": "Basil",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/VSadovnikov/Adaptive/issues"
+  },
+  "homepage": "https://github.com/VSadovnikov/Adaptive#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
