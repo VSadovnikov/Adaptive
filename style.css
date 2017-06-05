@@ -56,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
         min-height: 100px;
         border: 1px solid grey;
         border-radius: 7pt;
-        height: auto;
+        
         
     }
     
@@ -127,10 +127,17 @@ width:700px;
     font-size: 20px;
 }
 
+.header-nav-list{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .header-nav {
     float: right;
     margin-right: 10px;
     margin-top: 30px;
+    
 }
 .header-nav li {
     float: left;
@@ -140,6 +147,7 @@ width:700px;
     border-radius: 10px 10px 10px 10px;
     background: #696b70;
     list-style: none;
+    align-self: center;
     
 }
 
@@ -147,6 +155,8 @@ width:700px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    display: flex;
+
     color: #dee0e5;
 
 }
@@ -170,7 +180,8 @@ width:700px;
 .catalogue-items li {
     float:none;
     position:relative;
-    margin-left:140px;
+    margin-left:100px;
+    margin-top: -1px;
     padding:5px;
 }
 
@@ -191,53 +202,8 @@ width:700px;
 .header-nav li a:hover {
     color:black;
 }
-
-
-.copyright {
-    border: 1px solid grey;
-    border-radius: 10px 10px 10px 10px;
-    width: 48%;
-    float: left;
-    padding: 3px;
-    height: auto;
-    
-}
-
-.footer-contacts {
-    border: 1px solid grey;
-    border-radius: 10px 10px 10px 10px;
-    width: 50%;
-    height: auto;
-    padding: 3px;
-    float: right;
-}
-.footer-contact-list {
-            float: right;
-            margin-top: 1px; 
-            height: auto;
-            padding-top:4px;
-            padding-bottom: 4px; 
-            margin-bottom: -5px; 
-        }
-        .footer-contact-list-item{
-        list-style: none;
-            padding-bottom: -6px;
-            padding-bottom: 9px;
-            margin-top: -5px;
-            
-        
-        }
-        
-        .footer-contact-list-item a{
-        font-size: 24px;
-        
-        
-        }
-        
-
- 
-    /* Too narrow to support three columns */
-    @media all and (max-width: 640px) {
+   /* Too narrow to support three columns */
+    @media all and (max-width: 768px) {
         #main, #page {
             flex-direction: column;
         }
@@ -282,47 +248,80 @@ width:700px;
 
 }
 
+.header-nav-list{
+    margin-left: -50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.copyright {
-    border: 1px solid grey;
-    border-radius: 10px 10px 10px 10px;
-    width: 45%;
+.header-nav li {
     float: left;
-    padding: 1px;
-    height: auto;
-    
-}
-
-.footer-contacts {
-    border: 1px solid grey;
+    padding: 1px 10px;
+    border: 1px solid #dee0e5;
     border-radius: 10px 10px 10px 10px;
-    width: 45%;
-    float: right;
-    font-size: 14px;
+    background: #696b70;
+    list-style: none;
+    align-self: center;
+    margin-left:5px;
+    margin-right: -5px;
+    display: flex;
     
 }
 
-        .footer-contact-list {
-            float: right;
-            margin-top: 1px; 
-            height: auto;
-            padding-top:4px;
-            padding-bottom: 4px; 
-            margin-bottom: -5px; 
-        }
-        .footer-contact-list-item{
-        list-style: none;
-            padding-bottom: -6px;
-            padding-bottom: 9px;
-            margin-top: -5px;
-        
-        }
-        
-        .footer-contact-list-item a{
-        font-size: 14px;
-        
-        
-        }
+.header-nav li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: flex;
+    color: #dee0e5;
+
+}
+
+
+/* Animated menu start*/
+.header-nav li ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin-left: -15px;
+  margin-right: 5px;
+  margin-bottom: -30px;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.catalogue-items {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.catalogue-items li {
+    float:none;
+    margin-top: 10px; 
+    padding-right: 15px;
+     
+}
+
+.catalogue-items li a {
+    padding:3px;
+    font-size:10px;
+}
+
+.header-nav li:hover > ul {
+  display: block;
+
+}
+
+.header-nav li:hover {
+    background:#b9dba2;
+}
+
+.header-nav li a:hover {
+    color:black;
+}
+
         
         #main > article, #main > nav, #main > aside {
         /* Return them to document order */
