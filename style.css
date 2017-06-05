@@ -128,7 +128,8 @@ width:700px;
 }
 
 .header-nav-list{
-    margin: 0;
+    margin: 25;
+    margin-left: -25px;
     display: flex;
     flex-direction: column;
 }
@@ -252,7 +253,6 @@ width:700px;
     margin-left: -50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .header-nav li {
