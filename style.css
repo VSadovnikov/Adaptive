@@ -1,14 +1,16 @@
 body {
-background: rgba(226,226,226,1);
-background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(77,56,77,1) 39%, rgba(219,219,219,1) 93%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(39%, rgba(77,56,77,1)), color-stop(93%, rgba(219,219,219,1)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(77,56,77,1) 39%, rgba(219,219,219,1) 93%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(77,56,77,1) 39%, rgba(219,219,219,1) 93%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(77,56,77,1) 39%, rgba(219,219,219,1) 93%, rgba(254,254,254,1) 100%);
-background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(77,56,77,1) 39%, rgba(219,219,219,1) 93%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
 
-    }
+    background-color: #e3e3e3;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNlMmUyZTIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuNSIvPjxzdG9wIHN0b3AtY29sb3I9IiNkMWQxZDEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUxIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 100%,color-stop(0, rgb(226, 226, 226)),color-stop(0.5, rgb(219, 219, 219)),color-stop(0.51, rgb(209, 209, 209)),color-stop(1, rgb(254, 254, 254)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(top right,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51%,rgb(254, 254, 254) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to bottom left,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51%,rgb(254, 254, 254) 100%);
+    background-image: -ms-repeating-linear-gradient(top right,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51%,rgb(254, 254, 254) 100%);
+}
+
     
 
     #main {
@@ -24,7 +26,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
         padding: 5px;
         border: 1px solid #cccc33;
         border-radius: 7pt;
-        background: #dddd88;
         flex: 3 1 60%;
         order: 2;
     }
@@ -34,7 +35,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
         padding: 5px;
         border: 1px solid #8888bb;
         border-radius: 7pt;
-        background: #ccccff;
         flex: 1 6 20%;
         order: 1;
     }
@@ -44,7 +44,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
         padding: 5px;
         border: 1px solid #8888bb;
         border-radius: 7pt;
-        background: #ccccff;
         flex: 1 6 20%;
         order: 3;
     }
@@ -74,12 +73,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
     flex-direction: row;
     padding-top:5px;
     margin-top:25px;
+    font-family:'Arial';
+    font-size:24px;
+    color:white;
+ text-decoration:none;
     
     }
 
     .reg-button-block {
     float: right;
-    margin-top:-50px;
+    margin-top:-65px;
     margin-right:-30px;
     max-width:1100px;
     min-width:200px;
@@ -87,13 +90,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 
 .footer{
-    display: block;
-        margin: 4px;
+    display: inline-block;
         padding: 5px;
         min-height: 100px;
         border: 1px solid #eebb55;
         border-radius: 7pt;
+        margin-top:10px;
+        padding-bottom:-20px;
 }
+
+footer h3 {
+    font-style: 'arial';
+    font-size:20px;
+    position:flex;
+    text-align:center;
+    }
 
 .reg-button-list {
 float:right;
@@ -114,7 +125,7 @@ width:700px;
 }
 
 .reg-button-list-item:hover {
-    background:green;
+    background:orange;
 }
 
 .reg-button-list-item a:hover {
@@ -125,30 +136,39 @@ width:700px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    color:white;
 }
 
+.header-logo {
+    background-color: #8c8c8c;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiM1YjViNWIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzgwODA4MCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMjIyIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2E5YTlhOSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuOTc1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzViNWI1YiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuOTc1MiIvPjxzdG9wIHN0b3AtY29sb3I9IiM3YzdjN2MiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 100%,color-stop(0, rgb(91, 91, 91)),color-stop(0.222, rgb(128, 128, 128)),color-stop(0.975, rgb(169, 169, 169)),color-stop(0.975, rgb(91, 91, 91)),color-stop(1, rgb(124, 124, 124)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(top right,rgb(91, 91, 91) 0%,rgb(128, 128, 128) 22.2%,rgb(169, 169, 169) 97.5%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to bottom left,rgb(91, 91, 91) 0%,rgb(128, 128, 128) 22.2%,rgb(169, 169, 169) 97.5%);
+    background-image: -ms-repeating-linear-gradient(top right,rgb(91, 91, 91) 0%,rgb(128, 128, 128) 22.2%,rgb(169, 169, 169) 97.5%);
+}
+
+
 .header-nav-list{
-    margin: 25;
     margin-left: -25px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
 }
 
 .header-nav {
-    float: right;
-    margin-right: 10px;
-    margin-top: 30px;
-    
+    float:right;
 }
 .header-nav li {
-    float: left;
     padding: 10px 10px;
-    margin: 10px;
+    margin-right: 10px;
     border: 2px solid #dee0e5;
     border-radius: 10px 10px 10px 10px;
     background: #696b70;
     list-style: none;
     align-self: center;
+    float:left;
     
 }
 
@@ -160,6 +180,33 @@ width:700px;
 
     color: #dee0e5;
 
+}
+
+
+.header-search {
+    float:left;
+    position:absolute;
+    top:70px;
+    left:850px;
+}
+
+.header-search-button {
+padding:5px;
+}
+
+.header-search-text {
+padding:5px;
+}
+
+.header-search-button {
+    border: 2px solid #dee0e5;
+    border-radius: 10px 10px 10px 10px;
+    margin-left:10px;
+}
+
+.header-search-button:hover {
+    background:orange;
+    color:white;
 }
 
 /* Animated menu start*/
@@ -174,15 +221,16 @@ width:700px;
 
 
 .catalogue-items {
-    margin-top:-30px;
+    margin-top:15px;
+    margin-left:-20px;
     
 
 }
 .catalogue-items li {
     float:none;
     position:relative;
-    margin-left:100px;
-    margin-top: -1px;
+    margin-left:10px;
+    margin-top: 5px;
     padding:5px;
 }
 
@@ -197,12 +245,177 @@ width:700px;
 }
 
 .header-nav li:hover {
-    background:#b9dba2;
+    background:orange;
 }
 
 .header-nav li a:hover {
+    color:white;
+}
+
+aside li {
+    padding-bottom:10px;
+    list-style:none;
+}
+
+.filter li {
+ margin-bottom:15px;
+
+}
+
+.filter li a img {
+    margin-right:10px;
+    margin-bottom:-18px;
+}
+
+
+.review-form-table {
+    width:100%;
+    text-align:right;
+    padding-top:20px;
+}
+
+.review-form-table tr {
+    width:100%;
+    text-align:right;
+    padding:10px;
+}
+
+.review-form-table td {
+    padding:10px;
+}
+
+.review-form-table label {
+    font-size:18px;
+    font-family:Arial;
+}
+
+.send-review-button {
+    font-size:25px;
+    padding:5px;
+    margin-top:10px;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+
+
+}
+
+.send-review-button a {
+    text-decoration:none;
     color:black;
 }
+
+.send-review-button a:hover {
+    color:white;
+    text-align:center;
+}
+
+.send-review-button:hover {
+    background:orange;
+
+}
+
+.product-info {
+    height:auto;
+    width:930px;
+    float:right;
+    position:absolute;
+    left:400px;
+    right:20px;
+    margin-top:-8px;
+}
+
+.product-info-details {
+    height:auto;
+    width:930px;
+    float:right;
+    position:absolute;
+    left:400px;
+    right:20px;
+    margin-top:-19px;
+}
+
+
+.info-box {
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    width:910px;
+    float:right;
+    margin-left:20px;
+}
+
+.price-box {
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    width:910px;
+    float:right;
+    margin-top:10px;
+}
+
+.img-box {
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    width:340px;
+    position:relative;
+    margin-right:20px;
+}
+
+.img-box img {
+    margin-left:25px;
+}
+
+.product-title {
+    position:absolute;
+    top:10px;
+}
+
+.price-section {
+    width:200px;
+    float:right;
+    margin-top:3px;
+    background-color:green;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    padding:20px;
+    text-align:center;
+
+}
+
+.price-section a {
+    color:white;
+    text-style:bold;
+    font-size:20px;
+    text-decoration:none;
+    margin-bottom:5px;
+    text-align:center;
+}
+
+.buy-section {
+    width:180px;
+    height:auto;
+    background-color:#d1cb3e;
+    margin-left:480px;
+    margin-top:5px;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.buy-section h3 {
+    font-size:18px;
+    color:white;
+    padding:-10px;
+    height:-10px;
+    text-align: center;
+}
+
+.buy-btn {
+    color: #696b70;
+}
+
+.buy-btn:hover {
+    color: yellow;
+}
+
+
    /* Too narrow to support three columns */
     @media all and (max-width: 768px) {
         #main, #page {
@@ -252,7 +465,6 @@ width:700px;
 .header-nav-list{
     margin-left: -50px;
     display: flex;
-    flex-direction: row;
 }
 
 .header-nav li {

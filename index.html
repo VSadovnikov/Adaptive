@@ -1,25 +1,29 @@
 ​<!DOCTYPE html>
-  <head>
-      <link rel="stylesheet" href="style.css">
-      <meta charset="utf-8"/>
-      <title>MACSTORE</title>
-  </head>
-  <body>
-    <header>
-        <div class="logo-block">
-            <a href=""><img class="logo-img" src="img/blog-logo.png">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <title>MACSTORE</title>
+</head>
+<body>
+<header class="header-logo">
+    <div>
+        <a href=""><img class="logo-img" src="img/blog-logo.png">
             <h3 class="logo-name">Mac Store</h3></a>
-        </div>
+    </div>
+    <section class="header-search">
+        <input type="text" class="header-search-text" placeholder="Search product"><input type="button" class="header-search-button" value="Search">
+    </section>
     <section>
         <ul class="reg-button-block">
             <li class="reg-button-list-item"><a href="sign-in-page.html">Sign In</a></li>
             <li class="reg-button-list-item"><a href="sign-up-page.html">Sign Up</a></li>
-            </ul>
+        </ul>
     </section>
-    </header>
-    
-    <div id='main'>
-        <nav class="header-nav">
+
+</header>
+<header>
+    <nav class="header-nav">
         <ul class="header-nav-list">
             <li><a href="index.html">Main Page</a></li>
             <li><a href="">Catalogue</a>
@@ -35,14 +39,42 @@
             <li><a href="contact-info.html">Contact Info</a></li>
             <li><a href="admin.html">Admin panel</a></li>
         </ul>
-
     </nav>
-    
-      <aside>aside</aside>
-  <article>article</article>    
-    </div>
-    <footer>
-        
-      </footer>
-  </body>
+</header>
+<div id='main'>
+    <article>article</article>
+    <aside>
+        <ul class="filter">
+            <li><a href=""><img src="img/macbook-air-2016-filter.png"/>Macbook Air 2016</a></li>
+            <li><a href=""><img src="img/macbook-12-filter.png"/>Macbook 12"</a></li>
+            <li><a href=""><img src="img/macbook-pro-2015-13-retina- filter.png"/>Macbook Pro 2015 Retina</a></li>
+            <li><a href=""><img src="img/macbook-pro-2016-13'-filter.png"/>Macbook Pro 2016</a></li>
+            <hr/>
+            <h3>
+                <center>Sorting</center>
+            </h3>
+            <hr/>
+            <form class="sort-form">
+                <table class="sort-table">
+                    <tr>
+                        <td><label for="sorting-types">Sort By:</label></td>
+                        <td>
+                            <select id="sorting-types" class="sorting-selection">
+                                <option class="option-list-item">Name</option>
+                                <option class="option-list-item">New Products</option>
+                                <option class="option-list-item" selected>Price Low</option>
+                                <option class="option-list-item">Price High</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <hr/>
+        </ul>
+    </aside>
+</div>
+<footer>
+    <h3>COPYRIGHT © 2017 Mac Store</h3>
+</footer>
+</body>
 </html>
